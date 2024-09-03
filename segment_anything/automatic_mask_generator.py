@@ -283,6 +283,9 @@ class SamAutomaticMaskGenerator:
             return_logits=True,
         )
 
+        masks = masks[:, 1, :, :].unsqueeze(1)
+        iou_preds = iou_preds[:, 1].unsqueeze(1)
+
         # Serialize predictions and store in MaskData
         data = MaskData(
             masks=masks.flatten(0, 1),
