@@ -4,6 +4,13 @@
 The automatic_mask_generator.py file has been modified. Normally, SAM outputs and aggregates segmentation at three levels of fine, medium and coarse. For creation of the above mentioned annotations, only the second level output of SAM is used.
 It is possible to automatically process large batch of data. The generated annotations will be automatically filtered and stored in a coco format json files. The code supports multi-gpu environment.
 
+Before and after with SAM annotator:
+<p float="left">
+  <img src="assets/plotni.png?raw=true" width="48.25%" />
+  <img src="assets/plot86250.png?raw=true" width="48.5%" /> 
+</p>
+
+
 # This repo is based on following:
 
 [Alexander Kirillov](https://alexander-kirillov.github.io/), [Eric Mintun](https://ericmintun.github.io/), [Nikhila Ravi](https://nikhilaravi.com/), [Hanzi Mao](https://hanzimao.me/), Chloe Rolland, Laura Gustafson, [Tete Xiao](https://tetexiao.com), [Spencer Whitehead](https://www.spencerwhitehead.com/), Alex Berg, Wan-Yen Lo, [Piotr Dollar](https://pdollar.github.io/), [Ross Girshick](https://www.rossgirshick.info/)
