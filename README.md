@@ -1,10 +1,10 @@
-# Segment Anything
-
-**[Meta AI Research, FAIR](https://ai.facebook.com/research/)**
+# Segment Anything Annotator
 
 **This is a modification of the original SAM** for creating annotations and potential object proposals using the segment everything mode of SAM and exporting the resulting annotations in coco format json files.
 The automatic_mask_generator.py file has been modified. Normally, SAM outputs and aggregates segmentation at three levels of fine, medium and coarse. For creation of the above mentioned annotations, only the second level output of SAM is used.
+It is possible to automatically process large batch of data. The generated annotations will be automatically filtered and stored in a coco format json files. The code supports multi-gpu environment.
 
+# This repo is based on following:
 
 [Alexander Kirillov](https://alexander-kirillov.github.io/), [Eric Mintun](https://ericmintun.github.io/), [Nikhila Ravi](https://nikhilaravi.com/), [Hanzi Mao](https://hanzimao.me/), Chloe Rolland, Laura Gustafson, [Tete Xiao](https://tetexiao.com), [Spencer Whitehead](https://www.spencerwhitehead.com/), Alex Berg, Wan-Yen Lo, [Piotr Dollar](https://pdollar.github.io/), [Ross Girshick](https://www.rossgirshick.info/)
 
